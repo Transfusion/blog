@@ -1,0 +1,4 @@
+[submodule "path_to_submodule"] 
+	path = themes/icarus
+	url = https://github.com/Transfusion/hexo-theme-icarus.git
+	branch = blog_transfusion
