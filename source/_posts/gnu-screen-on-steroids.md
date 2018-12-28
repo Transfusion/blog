@@ -1,4 +1,3 @@
----
 title: GNU Screen on Steroids
 url: 415.html
 id: 415
@@ -7,17 +6,20 @@ categories:
 date: 2014-06-18 21:03:52
 tags:
 ---
+Note: This is an old post, from an old blog far, far away ![](/images/eplyrn.jpg) Append this to your ~/.bashrc:
 
-Note: This is an old post, from an old blog far, far away [![](/wp-content/uploads/2014/06/eplyrn-300x103.jpg)](/wp-content/uploads/2014/06/eplyrn.jpg) Append this to your ~/.bashrc:
-
+```bash
 case "$TERM" in
     screen*) PROMPT_COMMAND='echo -ne "�33k�33�134"'
 esac
+```
 
 and this to your .screenrc:
 
+```
 hardstatus alwayslastline '%{= G}\[ %{G}%H %{g}\]\[%= %{= w}%?%-Lw%?%{= R}%n*%f %t%?%{= R}(%u)%?%{= w}%+Lw%?%= %{= g}\]\[ %{y}Load: %l %{g}\]\[%{B}%Y-%m-%d %{W}%c:%s %{g}\]'
 shelltitle '$ |bash'
+```
 
 Courtesy of [http://superuser.com/questions/244299/gnu-screen-how-to-update-dynamically-the-title-of-a-window](http://superuser.com/questions/244299/gnu-screen-how-to-update-dynamically-the-title-of-a-window "http://superuser.com/questions/244299/gnu-screen-how-to-update-dynamically-the-title-of-a-window") and [http://beerpla.net/2009/10/06/supercharge-your-gnu-screen-with-a-power-taskbar-and-never-feel-lost-again/](http://beerpla.net/2009/10/06/supercharge-your-gnu-screen-with-a-power-taskbar-and-never-feel-lost-again/ "http://beerpla.net/2009/10/06/supercharge-your-gnu-screen-with-a-power-taskbar-and-never-feel-lost-again/")
 

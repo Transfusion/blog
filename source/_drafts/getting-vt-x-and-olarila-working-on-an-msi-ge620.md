@@ -1,4 +1,3 @@
----
 title: Getting VT-x and Olarila Working on an MSI GE620
 url: 397.html
 id: 397

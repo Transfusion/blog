@@ -1,16 +1,15 @@
----
 title: First Foray into MIPS Assembly
 url: 451.html
 id: 451
 categories:
-  - Programming
-  - Unix
+  - [Programming]
+  - [Unix]
 date: 2014-09-30 23:26:28
 tags:
 ---
-
 Task: Print Hello World 10 times.
 
+```mips
 	.data
 hello_str: .asciiz "Hello World!n"
 	.text
@@ -18,7 +17,7 @@ hello_str: .asciiz "Hello World!n"
 main:
 	subu $sp, $sp, 4 # create a word on the stack
 	sw $ra, 4($sp) # store the return address
-\# put main function code here
+# put main function code here
 
 	li $t0, 10 #the number at which we want to end our loop.
 	li $t1, 0 #start counting from 0; we are going to increment this counter 10 times.
@@ -32,5 +31,7 @@ main:
 	end:
 		li $v0, 10
 		syscall
+        
+```
 
 [![recorded_compressed](/wp-content/uploads/2014/09/recorded_compressed1-300x214.gif)](/wp-content/uploads/2014/09/recorded_compressed1.gif)

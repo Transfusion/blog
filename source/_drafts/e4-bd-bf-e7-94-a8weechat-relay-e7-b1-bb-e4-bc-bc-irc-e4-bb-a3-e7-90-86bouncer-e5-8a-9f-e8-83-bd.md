@@ -1,4 +1,3 @@
----
 title: 使用weechat relay (类似 IRC 代理/bouncer)功能
 url: 55.html
 id: 55

@@ -1,4 +1,3 @@
----
 title: 'C++ For Dummies - Chapter 5: NestedDemo rewritten in Python'
 url: 64.html
 id: 64
@@ -7,15 +6,16 @@ categories:
 date: 2013-10-26 16:30:58
 tags:
 ---
-
+```cpp
 // NestedDemo - input a series of numbers.
 //              Continue to accumulate the sum
 //              of these numbers until the user
 //              enters a 0. Repeat the process
 //              until the sum is 0.
-#include #include #include using namespace std;
 
-int main(int nNumberofArgs, char* pszArgs\[\])
+using namespace std;
+
+int main(int nNumberofArgs, char* pszArgs[])
 {
     // the outer loop
     cout << "This program sums multiple seriesn"
@@ -73,7 +73,9 @@ int main(int nNumberofArgs, char* pszArgs\[\])
     system("PAUSE");
     return 0;
 } 
+```
 
+```py
 #! /usr/bin/python
 print "This program sums multiple seriesnof numbers. Terminate each sequencenb
 y entering a negative number.nTerminate the series by entering twonnegative nu
@@ -104,3 +106,4 @@ def startSum():
 startSum()
 raw_input()
 #Transfusion's rewriting
+```
